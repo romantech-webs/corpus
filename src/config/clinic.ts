@@ -1,307 +1,363 @@
 export const clinic = {
-  // === IDENTIDAD ===
-  name: "Centro Estética CyM",
-  logo: "/images/logo.jpg" as string | null,
-  tagline: "Tu Centro de Belleza en Puertollano",
-  description: "Centro Estética CyM es un centro de belleza integral en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados para realzar tu belleza natural.",
-
-  // === PALETA (Elegante/Spa) ===
+  name: "Corpus",
+  logo: "/images/logo.png",
+  tagline: "Fisioterapia profesional en Santa Cruz de Tenerife",
+  description: "Corpus es tu clínica de fisioterapia de confianza en Santa Cruz de Tenerife, Álava. Con 5 estrellas en Google y valoración perfecta de nuestros pacientes, ofrecemos tratamientos personalizados de fisioterapia manual, deportiva y rehabilitación. Nuestro equipo liderado por Silvia combina profesionalidad, cercanía y técnicas avanzadas para tu recuperación completa. Ubicación excelente con aparcamiento disponible.",
   colors: {
-    primary: "#C9A86C",      // Dorado elegante
-    secondary: "#2D2D2D",    // Gris sofisticado
-    accent: "#D4A574",       // Rosa champán
-    neutral: "#FAF8F5",      // Crema cálido
+    primary: "#d50052",
+    secondary: "#400019",
+    accent: "#d4004e",
+    neutral: "#fcebf1"
   },
-
-  // === CONTACTO ===
-  phone: "629 61 04 71",
-  whatsapp: "+34629610471",
-  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de estética.",
-  email: "info@esteticacym.es",
-
-  // === UBICACIÓN ===
+  phone: "689 88 20 43",
+  whatsapp: "+34689882043",
+  whatsappMessage: "Hola, me gustaría solicitar información sobre vuestros tratamientos de fisioterapia.",
+  email: "",
   address: {
-    street: "C. Numancia, 40",
-    city: "Puertollano",
-    province: "Ciudad Real",
-    postalCode: "13500",
-    country: "España",
+    street: "Cam. la Piterita, 107, Nave 14, 38329 La Laguna, Santa Cruz de Tenerife, España",
+    city: "Santa Cruz de Tenerife",
+    province: "Álava",
+    postalCode: "38329",
+    country: "España"
   },
-  googleMapsUrl: "https://maps.google.com/?q=C.+Numancia+40+Puertollano",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.5!2d-4.1078!3d38.6872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6d1f1a8a8a8a8a%3A0x0!2sC.+Numancia%2C+40%2C+13500+Puertollano!5e0!3m2!1ses!2ses!4v1",
-  coordinates: { lat: 38.6872, lng: -4.1078 },
-
-  // === HORARIOS ===
+  googleMapsUrl: "https://maps.google.com/?cid=8031570255310297799&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
+  googleMapsEmbed: "https://maps.google.com/maps?q=Corpus%20%4028.4759%2C-16.29&z=16&output=embed",
+  coordinates: {
+    lat: 28.4759,
+    lng: -16.29
+  },
   schedule: [
-    { days: "Lunes - Viernes", hours: "10:00 - 20:00" },
-    { days: "Sábado", hours: "Cerrado" },
-    { days: "Domingo", hours: "Cerrado" },
+    {
+      days: "lunes - jueves",
+      hours: "8:00–20:30"
+    },
+    {
+      days: "viernes",
+      hours: "8:00–19:00"
+    },
+    {
+      days: "sábado - domingo",
+      hours: "Cerrado"
+    }
   ],
-
-  // === REDES SOCIALES ===
   social: {
-    instagram: "https://www.instagram.com/centrodeesteticacym/",
-    facebook: "https://www.facebook.com/centrodeesteticacym/",
-    linkedin: null as string | null,
-    tiktok: null as string | null,
+    instagram: null,
+    facebook: null,
+    linkedin: null,
+    tiktok: null
   },
-
-  // === RESEÑAS GOOGLE ===
   reviews: {
-    rating: 4.7,
-    count: 190,
-    url: "#",
+    rating: 5,
+    count: 8,
+    url: "https://maps.google.com/?cid=8031570255310297799&g_mp=Cilnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaE5lYXJieRACGAQgAA",
     featured: [
       {
-        author: "Eva León",
+        author: "JULIETA PAVÓN DÍAZ",
         rating: 5,
-        text: "Increíble trabajo de micropigmentación. El resultado es muy natural y el trato inmejorable. Sin duda volveré para más tratamientos.",
-        date: "hace 2 semanas",
+        text: "100% Recomendable. El trato muy profesional. Nos atendió Silvia, y fue muy amable con nosotros, se notaba que sabía de lo que hablaba. Buena relación calidad-precio 35€/hora, y en la primera sesión te hace una serie de pruebas para poder darte un diagnóstico. La ubicación es excelente, se encuentra en una nave donde se puede aparcar, por lo que acudir en vehículo no es problema. Volveremos!",
+        date: "Hace 4 años"
       },
       {
-        author: "Javier Padilla",
+        author: "AchoCristo",
         rating: 5,
-        text: "Excelente profesionalidad en todos los tratamientos. Las instalaciones son muy modernas y el ambiente muy relajante.",
-        date: "hace 1 mes",
+        text: "Estuve por una lesión en el talón y el trato que me dieron fué excelente, gracias en especial a Silvia que es una chica super agradable y profesional, recomendado 100%",
+        date: "Hace 4 meses"
       },
       {
-        author: "Melanie Ponce",
+        author: "Claudia Acosta García",
         rating: 5,
-        text: "Me encantó el resultado del microblading. Quedé muy satisfecha con el trabajo realizado. Muy recomendable.",
-        date: "hace 1 mes",
+        text: "Una atención muy buena. Fui por primera vez allí y la verdad es que genial.",
+        date: "Hace 2 años"
       },
       {
-        author: "María Teresa Salguero",
+        author: "Valentina Ford.4",
         rating: 5,
-        text: "El mejor centro de estética de Puertollano. Tratamientos de calidad y atención personalizada. Volveré seguro.",
-        date: "hace 2 meses",
+        text: "Buenos físios!!!\nEstoy muy contenta con atención y calidad!!!",
+        date: "Hace 3 años"
       },
-    ],
+      {
+        author: "Octavio Raúl Pérez González",
+        rating: 5,
+        text: "Extraordinario Centro de Rehabilitacion y Fisiologia.",
+        date: "Hace 2 años"
+      }
+    ]
   },
-
-  // === SERVICIOS ===
   services: [
     {
-      id: "micropigmentacion",
-      name: "Micropigmentación",
-      description: "Técnica avanzada de maquillaje semipermanente para cejas, labios y ojos. Resultados naturales y duraderos que realzan tu belleza.",
-      benefits: ["Resultados naturales", "Larga duración", "Mínimo mantenimiento"],
-      icon: "Sparkles",
+      id: "fisioterapia-manual",
+      name: "Fisioterapia Manual",
+      description: "Técnicas manuales especializadas aplicadas por profesionales con amplia experiencia. En tu primera sesión realizamos pruebas completas para un diagnóstico preciso. Tratamientos personalizados que alivian el dolor y mejoran tu movilidad de forma efectiva.",
+      benefits: [
+        "Diagnóstico completo en primera sesión",
+        "Alivio del dolor desde el primer tratamiento",
+        "Mejora significativa de la movilidad articular"
+      ],
+      icon: "Hand"
     },
     {
-      id: "microblading",
-      name: "Microblading de Cejas",
-      description: "Técnica pelo a pelo para cejas perfectamente definidas. Efecto hiperrealista que simula el vello natural.",
-      benefits: ["Efecto pelo a pelo", "Cejas definidas", "Aspecto natural"],
-      icon: "Feather",
+      id: "lesiones-deportivas",
+      name: "Fisioterapia Deportiva",
+      description: "Especialistas en recuperación de lesiones deportivas con técnicas avanzadas. Tratamos desde lesiones agudas hasta problemas crónicos que afectan tu rendimiento. Protocolos específicos para cada tipo de lesión y deporte.",
+      benefits: [
+        "Recuperación más rápida y segura",
+        "Prevención de futuras lesiones",
+        "Vuelta al deporte con garantías"
+      ],
+      icon: "Dumbbell"
     },
     {
-      id: "depilacion-laser",
-      name: "Depilación Láser",
-      description: "Eliminación definitiva del vello con tecnología láser de última generación. Tratamientos seguros y efectivos.",
-      benefits: ["Resultados permanentes", "Sin dolor", "Piel suave"],
-      icon: "Zap",
+      id: "lesiones-talon",
+      name: "Tratamiento de Lesiones de Talón",
+      description: "Atención especializada para lesiones del talón y pie, incluyendo fascitis plantar, tendinitis aquílea y otras patologías. Valoración específica y tratamiento personalizado con técnicas manuales y terapias avanzadas. Resultados comprobados por nuestros pacientes.",
+      benefits: [
+        "Reducción del dolor al caminar",
+        "Tratamiento específico para cada patología",
+        "Seguimiento hasta recuperación completa"
+      ],
+      icon: "Target"
     },
     {
-      id: "tratamientos-faciales",
-      name: "Tratamientos Faciales",
-      description: "Cuidados personalizados para cada tipo de piel. Hidratación profunda, antiedad y luminosidad para un rostro radiante.",
-      benefits: ["Piel rejuvenecida", "Hidratación profunda", "Luminosidad"],
-      icon: "Flower2",
+      id: "rehabilitacion",
+      name: "Rehabilitación",
+      description: "Programas de rehabilitación personalizados adaptados a tus necesidades específicas. Diseñamos planes de recuperación funcional tras lesiones, cirugías o procesos degenerativos. Seguimiento continuo para asegurar tu progreso constante.",
+      benefits: [
+        "Plan personalizado según tu lesión",
+        "Recuperación funcional completa",
+        "Seguimiento continuo de tu evolución"
+      ],
+      icon: "Activity"
     },
     {
-      id: "tratamientos-corporales",
-      name: "Tratamientos Corporales",
-      description: "Tratamientos reductores, reafirmantes y anticelulíticos. Moldea tu silueta con las técnicas más avanzadas.",
-      benefits: ["Reduce centímetros", "Reafirma la piel", "Elimina celulitis"],
-      icon: "Heart",
+      id: "puncion-seca",
+      name: "Punción Seca",
+      description: "Tratamiento especializado de puntos gatillo miofasciales mediante técnicas de punción seca. Efectivo para eliminar contracturas musculares persistentes y dolor crónico. Aplicado por fisioterapeutas certificados en esta técnica avanzada.",
+      benefits: [
+        "Eliminación de contracturas profundas",
+        "Alivio del dolor crónico muscular",
+        "Resultados duraderos y efectivos"
+      ],
+      icon: "Target"
     },
     {
-      id: "manicura-pedicura",
-      name: "Manicura y Pedicura",
-      description: "Cuidado completo de manos y pies con esmaltes de alta calidad. Uñas perfectas con diseños personalizados.",
-      benefits: ["Uñas perfectas", "Manos cuidadas", "Diseños exclusivos"],
-      icon: "Hand",
+      id: "electroterapia",
+      name: "Electroterapia",
+      description: "Tecnología avanzada con corrientes eléctricas terapéuticas para acelerar tu recuperación. Complementamos los tratamientos manuales con equipos de última generación. Efectivo para reducir inflamación, dolor y mejorar la cicatrización.",
+      benefits: [
+        "Acelera el proceso de recuperación",
+        "Reducción efectiva de la inflamación",
+        "Tratamiento no invasivo y sin dolor"
+      ],
+      icon: "Zap"
     },
     {
-      id: "extensiones-pestanas",
-      name: "Extensiones de Pestañas",
-      description: "Mirada impactante con extensiones de pestañas pelo a pelo. Efecto natural o dramático según tu preferencia.",
-      benefits: ["Mirada intensa", "Efecto natural", "Sin máscara"],
-      icon: "Eye",
+      id: "valoracion-completa",
+      name: "Valoración y Diagnóstico",
+      description: "Primera sesión completa con pruebas específicas para identificar el origen de tu problema. Realizamos una evaluación exhaustiva antes de comenzar cualquier tratamiento. Te explicamos con claridad tu diagnóstico y el plan de tratamiento propuesto.",
+      benefits: [
+        "Diagnóstico preciso desde el inicio",
+        "Pruebas completas incluidas",
+        "Plan de tratamiento personalizado"
+      ],
+      icon: "Activity"
     },
     {
-      id: "maquillaje-profesional",
-      name: "Maquillaje Profesional",
-      description: "Maquillaje para eventos especiales, novias y sesiones fotográficas. Realza tu belleza para cada ocasión.",
-      benefits: ["Look personalizado", "Alta duración", "Acabado profesional"],
-      icon: "Palette",
-    },
+      id: "prevencion",
+      name: "Prevención y Educación",
+      description: "Asesoramiento profesional para prevenir lesiones y mantener tu bienestar a largo plazo. Te enseñamos ejercicios y hábitos posturales adaptados a tu actividad diaria. Seguimiento para asegurar que mantienes los resultados conseguidos.",
+      benefits: [
+        "Evita recaídas y nuevas lesiones",
+        "Ejercicios personalizados para casa",
+        "Mejora tu calidad de vida diaria"
+      ],
+      icon: "Heart"
+    }
   ],
-
-  // === PROCESO ===
   process: [
     {
       step: 1,
-      title: "Contacta",
-      description: "Solicita tu cita de consulta inicial por teléfono o WhatsApp",
+      title: "Solicita tu Cita",
+      description: "Contacta con nosotros por teléfono al 689 88 20 43 o WhatsApp. Te atenderemos personalmente para agendar tu cita en el horario que mejor te convenga. Nuestra ubicación cuenta con aparcamiento disponible para tu comodidad."
     },
     {
       step: 2,
-      title: "Consulta",
-      description: "Analizamos tus necesidades y diseñamos el tratamiento ideal para ti",
+      title: "Valoración Completa",
+      description: "En tu primera sesión realizamos una serie de pruebas específicas para darte un diagnóstico preciso. Evaluamos tu estado físico, historial y necesidades particulares. Te explicamos con claridad qué te ocurre y cómo vamos a tratarlo."
     },
     {
       step: 3,
-      title: "Tratamiento",
-      description: "Realizamos el tratamiento con las técnicas más avanzadas y productos de calidad",
+      title: "Tratamiento Personalizado",
+      description: "Aplicamos las técnicas más adecuadas para tu caso específico: fisioterapia manual, punción seca, electroterapia o la combinación que necesites. Cada sesión está diseñada para maximizar tu recuperación con el trato profesional y cercano que nos caracteriza."
     },
     {
       step: 4,
-      title: "Resultados",
-      description: "Disfruta de resultados espectaculares y un seguimiento personalizado",
-    },
+      title: "Seguimiento y Recuperación",
+      description: "Monitorizamos tu evolución en cada sesión y ajustamos el tratamiento según tu progreso. Te acompañamos hasta tu recuperación completa y te damos pautas para mantener los resultados. Nuestro objetivo es que vuelvas a tu vida normal sin molestias."
+    }
   ],
-
-  // === POR QUÉ ELEGIRNOS ===
   whyUs: [
     {
-      title: "Especialistas en Micropigmentación",
-      description: "Técnicas avanzadas de micropigmentación y microblading con resultados naturales y duraderos",
-      icon: "Award",
+      title: "Valoración 5 Estrellas en Google",
+      description: "Nuestros pacientes nos avalan con una valoración perfecta de 5 estrellas basada en 8 reseñas reales. Destacan nuestro trato profesional y cercano, la efectividad de los tratamientos y la excelente relación calidad-precio. Tu confianza es nuestro mejor reconocimiento.",
+      icon: "Heart"
     },
     {
-      title: "Tecnología de Vanguardia",
-      description: "Equipos de última generación para tratamientos más efectivos y seguros",
-      icon: "Cpu",
+      title: "Valoración Completa Desde el Primer Día",
+      description: "En tu primera sesión realizamos una serie de pruebas específicas para darte un diagnóstico preciso y personalizado. No empezamos ningún tratamiento sin entender completamente tu problema. Te explicamos con claridad qué te ocurre y cómo vamos a solucionarlo.",
+      icon: "Activity"
     },
     {
-      title: "Atención Personalizada",
-      description: "Cada clienta recibe un tratamiento único adaptado a sus necesidades y deseos",
-      icon: "UserCheck",
+      title: "Equipo Profesional y Cercano",
+      description: "Nuestro equipo liderado por Silvia combina amplio conocimiento técnico con un trato humano excepcional. Los pacientes valoran especialmente nuestra profesionalidad, amabilidad y la confianza que transmitimos. Nos importa que te sientas cómodo y comprendido durante todo el proceso.",
+      icon: "Hand"
     },
     {
-      title: "Valoración 4.7 Estrellas",
-      description: "190 clientas satisfechas nos avalan con excelentes valoraciones en Google",
-      icon: "Star",
-    },
+      title: "Ubicación Excelente con Aparcamiento",
+      description: "Corpus está ubicado en una nave en Santa Cruz de Tenerife con zona de aparcamiento disponible, facilitando tu acceso en vehículo sin complicaciones. Nuestros pacientes destacan la comodidad de nuestra ubicación. Llegar a tu cita es fácil y sin estrés.",
+      icon: "Target"
+    }
   ],
-
-  // === EQUIPO ===
   team: [
     {
-      name: "Centro Estética CyM",
-      role: "Especialistas en Micropigmentación",
+      name: "Silvia",
+      role: "Fisioterapeuta",
       image: "/images/team/placeholder.jpg",
-      bio: "Profesionales apasionadas por la belleza y el cuidado personal. Con años de experiencia en micropigmentación, microblading y tratamientos estéticos, nos dedicamos a realzar la belleza natural de cada clienta.",
-    },
+      bio: "Profesionales apasionados por la fisioterapia y la rehabilitación. En Corpus nos dedicamos a devolver la calidad de vida a nuestros pacientes con tratamientos personalizados y tecnología avanzada."
+    }
   ],
-
-  // === GALERÍA ===
   gallery: [
-    { src: "/images/gallery/local-fuera.webp", alt: "Fachada del Centro Estética CyM" },
-    { src: "/images/gallery/local-dentro.webp", alt: "Interior del centro - Recepción" },
-    { src: "/images/gallery/clinica-dentro1.webp", alt: "Sala de tratamientos" },
+    {
+      src: "/images/hero.webp",
+      alt: "Corpus - Imagen 1"
+    },
+    {
+      src: "/images/gallery/2.webp",
+      alt: "Corpus - Imagen 2"
+    },
+    {
+      src: "/images/gallery/3.webp",
+      alt: "Corpus - Imagen 3"
+    },
+    {
+      src: "/images/gallery/4.webp",
+      alt: "Corpus - Imagen 4"
+    },
+    {
+      src: "/images/gallery/5.webp",
+      alt: "Corpus - Imagen 5"
+    },
+    {
+      src: "/images/gallery/6.webp",
+      alt: "Corpus - Imagen 6"
+    },
+    {
+      src: "/images/gallery/7.webp",
+      alt: "Corpus - Imagen 7"
+    },
+    {
+      src: "/images/gallery/8.webp",
+      alt: "Corpus - Imagen 8"
+    },
+    {
+      src: "/images/gallery/9.webp",
+      alt: "Corpus - Imagen 9"
+    }
   ],
-
-  // === FAQ ===
   faq: [
     {
-      question: "¿Cuánto dura la micropigmentación?",
-      answer: "La micropigmentación puede durar entre 1 y 3 años dependiendo del tipo de piel, cuidados posteriores y la zona tratada. Ofrecemos retoques para mantener el resultado óptimo.",
+      question: "¿Cuánto cuesta una sesión en Corpus?",
+      answer: "En Corpus ofrecemos sesiones de fisioterapia por 35€ la hora, con una excelente relación calidad-precio. La primera sesión incluye una valoración completa con pruebas específicas para darte un diagnóstico preciso, sin coste adicional. Te explicamos desde el inicio cuántas sesiones aproximadas necesitarás según tu caso."
     },
     {
-      question: "¿Es doloroso el microblading de cejas?",
-      answer: "El procedimiento es prácticamente indoloro gracias a la aplicación de crema anestésica tópica. La mayoría de clientas describen la sensación como un ligero cosquilleo.",
+      question: "¿Qué incluye la primera sesión?",
+      answer: "La primera sesión en Corpus es una valoración completa donde realizamos una serie de pruebas específicas para diagnosticar correctamente tu problema. Evaluamos tu historial, realizamos tests físicos y te explicamos con claridad qué te ocurre y cuál será el plan de tratamiento. Todo esto está incluido en el precio de la sesión, sin costes ocultos."
     },
     {
-      question: "¿Cuántas sesiones necesito para la depilación láser?",
-      answer: "Generalmente se necesitan entre 6 y 8 sesiones espaciadas cada 4-6 semanas para obtener resultados óptimos. El número exacto depende del tipo de piel y vello.",
+      question: "¿Dónde está ubicada la clínica y tiene aparcamiento?",
+      answer: "Corpus está ubicado en una nave en Santa Cruz de Tenerife, Álava, con excelente accesibilidad. Disponemos de zona de aparcamiento, por lo que acudir en vehículo no es ningún problema. Nuestros pacientes destacan especialmente la comodidad de nuestra ubicación y la facilidad para aparcar."
     },
     {
-      question: "¿Qué cuidados necesito después de un tratamiento facial?",
-      answer: "Recomendamos evitar el sol directo, usar protección solar SPF50 y seguir la rutina de cuidados que te indicamos según tu tipo de piel.",
+      question: "¿Qué tipo de lesiones tratáis en Corpus?",
+      answer: "En Corpus tratamos todo tipo de lesiones musculoesqueléticas: lesiones deportivas, problemas de espalda, contracturas, lesiones de talón como fascitis plantar, tendinitis, dolor crónico y rehabilitación post-quirúrgica. Realizamos una valoración personalizada para cada caso y aplicamos las técnicas más efectivas: fisioterapia manual, punción seca, electroterapia y más."
     },
     {
-      question: "¿Ofrecéis tratamientos para novias?",
-      answer: "Sí, tenemos packs especiales para novias que incluyen tratamientos faciales, maquillaje de prueba y el día de la boda, manicura y más.",
+      question: "¿Cómo puedo pedir cita en Corpus?",
+      answer: "Puedes solicitar tu cita llamando directamente al 689 88 20 43 o por WhatsApp al mismo número. Te atenderemos personalmente para encontrar el horario que mejor se ajuste a tu disponibilidad. Nuestro trato cercano empieza desde el primer contacto."
     },
     {
-      question: "¿Las extensiones de pestañas dañan mis pestañas naturales?",
-      answer: "No, cuando se aplican correctamente por profesionales cualificados, las extensiones no dañan las pestañas naturales. Usamos adhesivos de alta calidad y técnicas seguras.",
+      question: "¿Quién me atenderá en la clínica?",
+      answer: "En Corpus contamos con un equipo de fisioterapeutas profesionales altamente cualificados. Silvia, nuestra fisioterapeuta principal, es especialmente valorada por los pacientes por su profesionalidad, conocimiento y trato cercano. Todos nuestros profesionales están comprometidos con tu recuperación y bienestar."
     },
     {
-      question: "¿Cuánto dura una sesión de tratamiento facial?",
-      answer: "Dependiendo del tratamiento, las sesiones duran entre 45 y 90 minutos. Incluimos tiempo para la consulta inicial y recomendaciones personalizadas.",
+      question: "¿Cuántas sesiones necesitaré?",
+      answer: "El número de sesiones depende de tu lesión específica y tu respuesta al tratamiento. En la primera sesión, tras realizar las pruebas de valoración, te daremos una estimación aproximada. Nuestro objetivo es tu recuperación completa en el menor tiempo posible, con seguimiento continuo para ajustar el tratamiento según tu evolución."
     },
     {
-      question: "¿Necesito cita previa?",
-      answer: "Sí, recomendamos siempre reservar cita previa para garantizar la disponibilidad y poder dedicarte el tiempo que mereces. Puedes reservar por teléfono o WhatsApp.",
-    },
+      question: "¿Qué opinan los pacientes de Corpus?",
+      answer: "Corpus tiene una valoración de 5 estrellas en Google basada en 8 reseñas de pacientes reales. Nuestros pacientes destacan especialmente el trato profesional y cercano, la efectividad de los tratamientos, la excelente relación calidad-precio y nuestra ubicación con aparcamiento. Muchos nos recomiendan al 100% tras su experiencia en la clínica."
+    }
   ],
-
-  // === SEO ===
   seo: {
-    titleTemplate: "%s | Centro Estética CyM - Belleza en Puertollano",
-    defaultTitle: "Centro Estética CyM | Tu Centro de Belleza en Puertollano",
-    defaultDescription: "Centro de estética en Puertollano especializado en micropigmentación, microblading, depilación láser y tratamientos faciales. Profesionales cualificados. Cita previa: 629 61 04 71.",
+    titleTemplate: "%s | Corpus",
+    defaultTitle: "Corpus - Fisioterapia en Santa Cruz de Tenerife",
+    defaultDescription: "Clínica de fisioterapia en Santa Cruz de Tenerife con 5★ en Google. Tratamientos personalizados, valoración completa y aparcamiento. 35€/hora. Llama al 689 88 20 43.",
     keywords: [
-      "centro estética Puertollano",
-      "micropigmentación Puertollano",
-      "microblading cejas Puertollano",
-      "depilación láser Puertollano",
-      "tratamientos faciales Puertollano",
-      "extensiones pestañas Puertollano",
-      "maquillaje profesional",
-      "manicura pedicura",
-      "tratamientos corporales",
-      "belleza Puertollano",
-      "Centro Estética CyM",
-      "estética Ciudad Real",
+      "fisioterapia Santa Cruz de Tenerife",
+      "Corpus fisioterapia",
+      "fisioterapeuta Santa Cruz de Tenerife",
+      "clínica fisioterapia Álava",
+      "fisioterapia deportiva Santa Cruz",
+      "lesiones talón Santa Cruz de Tenerife",
+      "rehabilitación Santa Cruz de Tenerife",
+      "fisioterapia manual Álava",
+      "punción seca Santa Cruz",
+      "fisioterapeuta Silvia Santa Cruz",
+      "fisioterapia con aparcamiento",
+      "mejor fisioterapia Santa Cruz de Tenerife"
     ],
-    ogImage: "/og-image.jpg",
+    ogImage: "/og-image.jpg"
   },
-
-  // === LEGAL ===
   legal: {
-    companyName: "Centro Estética CyM",
+    companyName: "Corpus",
     cif: "",
-    registeredAddress: "C. Numancia, 40, 13500 Puertollano, Ciudad Real",
+    registeredAddress: "Cam. la Piterita, 107, Nave 14, 38329 La Laguna, Santa Cruz de Tenerife, España, Santa Cruz de Tenerife, Álava"
   },
-
-  // === UI COPY (driven by clinic type) ===
-  heroHeadline: ["Tu Centro de", "Belleza", "en Puertollano"],
-  heroDescription: "Realza tu belleza natural con tratamientos de micropigmentación, microblading y estética avanzada. Profesionales cualificadas y tecnología de vanguardia.",
-  specialty: "Micropigmentación",
-  ctaLabel: "Realza tu Belleza",
-  ctaHeadline: "¿Lista para brillar?",
-  ctaDescription: "Da el primer paso hacia tu mejor versión. Pide tu cita ahora y nuestro equipo te asesorará de forma personalizada.",
-  statsLabel: "Clientas",
-  schemaType: "BeautySalon",
+  heroHeadline: [
+    "Tu Centro de",
+    "Fisioterapia",
+    "en Santa Cruz de Tenerife"
+  ],
+  heroDescription: "En Corpus te ofrecemos atención fisioterapéutica profesional y cercana en Santa Cruz de Tenerife. Realizamos una valoración completa en tu primera sesión para diseñar el tratamiento más efectivo para tu recuperación. Excelente ubicación con facilidad de aparcamiento.",
+  specialty: "Fisioterapia Personalizada",
+  ctaLabel: "Tu Recuperación",
+  ctaHeadline: "¿Listo para recuperar tu bienestar?",
+  ctaDescription: "Solicita tu cita de valoración en Corpus. Te atenderemos con profesionalidad y cercanía para diseñar el mejor plan de recuperación para ti.",
+  statsLabel: "Pacientes",
+  schemaType: "PhysicalTherapy",
   sectionCopy: {
     servicesLabel: "Nuestros Servicios",
     servicesTitle: "Tratamientos especializados",
-    servicesDescription: "Técnicas avanzadas de estética y belleza para realzar tu imagen y cuidar de ti.",
+    servicesDescription: "Soluciones profesionales adaptadas a tus necesidades de salud.",
     processLabel: "Cómo Trabajamos",
-    processTitle: "Tu camino hacia la belleza en 4 pasos",
+    processTitle: "Tu camino hacia la recuperación en 4 pasos",
     processDescription: "Un proceso simple y transparente diseñado para tu comodidad.",
     whyUsLabel: "Por Qué Elegirnos",
-    whyUsTitle: "Tu belleza, nuestra pasión",
-    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para realzar tu belleza natural.",
+    whyUsTitle: "Tu salud, nuestra prioridad",
+    whyUsDescription: "Combinamos experiencia, las mejores técnicas y un trato personalizado para cuidar de tu salud.",
     reviewsLabel: "Opiniones",
-    reviewsTitle: "Lo que dicen nuestras clientas",
+    reviewsTitle: "Lo que dicen nuestros pacientes",
     galleryLabel: "Instalaciones",
-    galleryTitle: "Conoce nuestro centro",
-    galleryDescription: "Un espacio diseñado para tu bienestar y relajación",
+    galleryTitle: "Conoce nuestra clínica",
+    galleryDescription: "Un espacio diseñado para tu bienestar y recuperación",
     faqLabel: "FAQ",
     faqTitle: "Preguntas frecuentes",
-    faqDescription: "Resolvemos las dudas más comunes de nuestras clientas.",
+    faqDescription: "Resolvemos las dudas más comunes de nuestros pacientes.",
     locationLabel: "Ubicación",
     locationTitle: "Cómo llegar",
     teamLabel: "Nuestro Equipo",
-    teamTitle: "Profesionales especializadas",
-    teamDescription: "Experiencia y pasión al servicio de tu belleza",
-  },
+    teamTitle: "Profesionales especializados",
+    teamDescription: "Experiencia y dedicación al servicio de tu salud"
+  }
 }
 
 export type Clinic = typeof clinic
